@@ -1,0 +1,79 @@
+[25-Dec-2019 09:55:40 America/New_York] PHP Notice:  Undefined index: status in /home/jobszdyr/public_html/anil/restaurant/login_check.php on line 5
+[25-Dec-2019 09:57:47 America/New_York] PHP Notice:  Undefined index: status in /home/jobszdyr/public_html/anil/restaurant/login_check.php on line 6
+[25-Dec-2019 10:12:34 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on bool in /home/jobszdyr/public_html/anil/restaurant/login_api.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/jobszdyr/public_html/anil/restaurant/login_api.php on line 32
+[25-Dec-2019 10:12:37 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on bool in /home/jobszdyr/public_html/anil/restaurant/login_api.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/jobszdyr/public_html/anil/restaurant/login_api.php on line 32
+[25-Dec-2019 10:12:39 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on bool in /home/jobszdyr/public_html/anil/restaurant/login_api.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/jobszdyr/public_html/anil/restaurant/login_api.php on line 32
+[25-Dec-2019 10:12:40 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on bool in /home/jobszdyr/public_html/anil/restaurant/login_api.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/jobszdyr/public_html/anil/restaurant/login_api.php on line 32
+[25-Dec-2019 10:12:53 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on bool in /home/jobszdyr/public_html/anil/restaurant/login_api.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/jobszdyr/public_html/anil/restaurant/login_api.php on line 32
+[25-Dec-2019 10:14:16 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on bool in /home/jobszdyr/public_html/anil/restaurant/login_api.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/jobszdyr/public_html/anil/restaurant/login_api.php on line 32
+[25-Dec-2019 20:51:21 Asia/Kolkata] PHP Notice:  Undefined index: request_type in /home/jobszdyr/public_html/anil/restaurant/sale_api.php on line 64
+[25-Dec-2019 20:51:21 Asia/Kolkata] PHP Notice:  Trying to get property 'request_type' of non-object in /home/jobszdyr/public_html/anil/restaurant/sale_api.php on line 11
+[25-Dec-2019 20:51:21 Asia/Kolkata] PHP Notice:  Trying to get property 'request_type' of non-object in /home/jobszdyr/public_html/anil/restaurant/sale_api.php on line 30
+[25-Dec-2019 20:51:21 Asia/Kolkata] PHP Notice:  Trying to get property 'request_type' of non-object in /home/jobszdyr/public_html/anil/restaurant/sale_api.php on line 47
+[25-Dec-2019 20:51:22 Asia/Kolkata] PHP Notice:  Undefined index: request_type in /home/jobszdyr/public_html/anil/restaurant/sale_api.php on line 64
+[25-Dec-2019 20:51:22 Asia/Kolkata] PHP Notice:  Undefined index: request_type in /home/jobszdyr/public_html/anil/restaurant/sale_api.php on line 64
+[25-Dec-2019 20:56:55 Asia/Kolkata] PHP Notice:  Undefined offset: 1 in /home/jobszdyr/public_html/anil/restaurant/order_list_api.php on line 186
+[25-Dec-2019 20:56:55 Asia/Kolkata] PHP Notice:  Undefined offset: 1 in /home/jobszdyr/public_html/anil/restaurant/order_list_api.php on line 187
+[25-Dec-2019 20:56:55 Asia/Kolkata] PHP Notice:  Undefined offset: 1 in /home/jobszdyr/public_html/anil/restaurant/order_list_api.php on line 188
+[25-Dec-2019 20:56:55 Asia/Kolkata] PHP Notice:  Undefined offset: 2 in /home/jobszdyr/public_html/anil/restaurant/order_list_api.php on line 186
+[25-Dec-2019 20:56:55 Asia/Kolkata] PHP Notice:  Undefined offset: 2 in /home/jobszdyr/public_html/anil/restaurant/order_list_api.php on line 187
+[25-Dec-2019 20:56:55 Asia/Kolkata] PHP Notice:  Undefined offset: 2 in /home/jobszdyr/public_html/anil/restaurant/order_list_api.php on line 188
+[25-Dec-2019 20:57:07 Asia/Kolkata] PHP Warning:  Use of undefined constant d_type - assumed 'd_type' (this will throw an Error in a future version of PHP) in /home/jobszdyr/public_html/anil/restaurant/order_list_api.php on line 57
+[25-Dec-2019 20:57:07 Asia/Kolkata] PHP Warning:  Use of undefined constant d_rate - assumed 'd_rate' (this will throw an Error in a future version of PHP) in /home/jobszdyr/public_html/anil/restaurant/order_list_api.php on line 59
+[25-Dec-2019 20:57:07 Asia/Kolkata] PHP Warning:  Use of undefined constant d_type - assumed 'd_type' (this will throw an Error in a future version of PHP) in /home/jobszdyr/public_html/anil/restaurant/order_list_api.php on line 65
+[25-Dec-2019 21:01:20 Asia/Kolkata] PHP Notice:  Undefined index: request_type in /home/jobszdyr/public_html/anil/restaurant/sale_api.php on line 64
+[25-Dec-2019 21:01:20 Asia/Kolkata] PHP Notice:  Undefined index: request_type in /home/jobszdyr/public_html/anil/restaurant/sale_api.php on line 64
+[25-Dec-2019 21:01:20 Asia/Kolkata] PHP Notice:  Trying to get property 'request_type' of non-object in /home/jobszdyr/public_html/anil/restaurant/sale_api.php on line 11
+[25-Dec-2019 21:01:20 Asia/Kolkata] PHP Notice:  Trying to get property 'request_type' of non-object in /home/jobszdyr/public_html/anil/restaurant/sale_api.php on line 30
+[25-Dec-2019 21:01:20 Asia/Kolkata] PHP Notice:  Trying to get property 'request_type' of non-object in /home/jobszdyr/public_html/anil/restaurant/sale_api.php on line 47
+[25-Dec-2019 21:01:21 Asia/Kolkata] PHP Notice:  Undefined index: request_type in /home/jobszdyr/public_html/anil/restaurant/sale_api.php on line 64
+[25-Dec-2019 10:32:23 America/New_York] PHP Notice:  Undefined index: status in /home/jobszdyr/public_html/anil/restaurant/login_check.php on line 6
+[25-Dec-2019 10:35:47 America/New_York] PHP Notice:  Undefined index: status in /home/jobszdyr/public_html/anil/restaurant/login_check.php on line 6
+[25-Dec-2019 10:36:11 America/New_York] PHP Notice:  Undefined property: stdClass::$username in /home/jobszdyr/public_html/anil/restaurant/login_api.php on line 14
+[25-Dec-2019 10:36:11 America/New_York] PHP Notice:  Undefined property: stdClass::$password in /home/jobszdyr/public_html/anil/restaurant/login_api.php on line 15
+[25-Dec-2019 10:37:09 America/New_York] PHP Notice:  Undefined index: status in /home/jobszdyr/public_html/anil/restaurant/login_check.php on line 6
+[25-Dec-2019 12:06:54 America/New_York] PHP Notice:  Undefined index: status in /home/jobszdyr/public_html/anil/restaurant/login_check.php on line 6
+[26-Dec-2019 12:19:35 America/New_York] PHP Notice:  Undefined index: status in /home/jobszdyr/public_html/anil/restaurant/login_check.php on line 6
+[26-Dec-2019 12:20:07 America/New_York] PHP Notice:  Undefined property: stdClass::$username in /home/jobszdyr/public_html/anil/restaurant/login_api.php on line 14
+[26-Dec-2019 12:20:07 America/New_York] PHP Notice:  Undefined property: stdClass::$password in /home/jobszdyr/public_html/anil/restaurant/login_api.php on line 15
+[26-Dec-2019 14:00:28 America/New_York] PHP Notice:  Undefined index: status in /home/jobszdyr/public_html/anil/restaurant/login_check.php on line 6
+[26-Dec-2019 14:00:47 America/New_York] PHP Notice:  Undefined index: status in /home/jobszdyr/public_html/anil/restaurant/login_check.php on line 6
+[26-Dec-2019 14:00:47 America/New_York] PHP Notice:  Undefined index: status in /home/jobszdyr/public_html/anil/restaurant/login_check.php on line 6
+[26-Dec-2019 22:20:01 America/New_York] PHP Notice:  Undefined index: status in /home/jobszdyr/public_html/anil/restaurant/login_check.php on line 6
+[26-Dec-2019 23:04:00 America/New_York] PHP Notice:  Undefined index: status in /home/jobszdyr/public_html/anil/restaurant/login_check.php on line 6
+[29-Dec-2019 10:19:21 America/New_York] PHP Notice:  Undefined index: status in /home/jobszdyr/public_html/anil/restaurant/login_check.php on line 6
+[29-Dec-2019 10:23:09 America/New_York] PHP Notice:  Undefined index: status in /home/jobszdyr/public_html/anil/restaurant/login_check.php on line 6
+[29-Dec-2019 10:23:39 America/New_York] PHP Notice:  Undefined index: status in /home/jobszdyr/public_html/anil/restaurant/login_check.php on line 6
+[29-Dec-2019 20:54:45 Asia/Kolkata] PHP Notice:  Undefined index: request_type in /home/jobszdyr/public_html/anil/restaurant/sale_api.php on line 64
+[29-Dec-2019 20:54:45 Asia/Kolkata] PHP Notice:  Trying to get property 'request_type' of non-object in /home/jobszdyr/public_html/anil/restaurant/sale_api.php on line 11
+[29-Dec-2019 20:54:45 Asia/Kolkata] PHP Notice:  Trying to get property 'request_type' of non-object in /home/jobszdyr/public_html/anil/restaurant/sale_api.php on line 30
+[29-Dec-2019 20:54:45 Asia/Kolkata] PHP Notice:  Trying to get property 'request_type' of non-object in /home/jobszdyr/public_html/anil/restaurant/sale_api.php on line 47
+[29-Dec-2019 20:54:46 Asia/Kolkata] PHP Notice:  Undefined index: request_type in /home/jobszdyr/public_html/anil/restaurant/sale_api.php on line 64
+[29-Dec-2019 20:54:46 Asia/Kolkata] PHP Notice:  Undefined index: request_type in /home/jobszdyr/public_html/anil/restaurant/sale_api.php on line 64
+[02-Jan-2020 07:37:45 America/New_York] PHP Notice:  Undefined index: status in /home/jobszdyr/public_html/anil/restaurant/login_check.php on line 6
+[05-Nov-2020 18:31:02 Asia/Kolkata] PHP Notice:  Undefined property: stdClass::$table_no in /home/jobszdyr/public_html/anil/restaurant/order_api.php on line 14
+[05-Nov-2020 18:31:21 Asia/Kolkata] PHP Notice:  Undefined offset: 1 in /home/jobszdyr/public_html/anil/restaurant/order_list_api.php on line 186
+[05-Nov-2020 18:31:21 Asia/Kolkata] PHP Notice:  Undefined offset: 1 in /home/jobszdyr/public_html/anil/restaurant/order_list_api.php on line 187
+[05-Nov-2020 18:31:21 Asia/Kolkata] PHP Notice:  Undefined offset: 1 in /home/jobszdyr/public_html/anil/restaurant/order_list_api.php on line 188
+[05-Nov-2020 18:31:21 Asia/Kolkata] PHP Notice:  Undefined offset: 2 in /home/jobszdyr/public_html/anil/restaurant/order_list_api.php on line 186
+[05-Nov-2020 18:31:21 Asia/Kolkata] PHP Notice:  Undefined offset: 2 in /home/jobszdyr/public_html/anil/restaurant/order_list_api.php on line 187
+[05-Nov-2020 18:31:21 Asia/Kolkata] PHP Notice:  Undefined offset: 2 in /home/jobszdyr/public_html/anil/restaurant/order_list_api.php on line 188
+[05-Dec-2020 08:12:09 America/New_York] PHP Notice:  Undefined index: status in /home/jobszdyr/public_html/anil/restaurant/login_check.php on line 6

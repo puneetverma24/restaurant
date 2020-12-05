@@ -1,0 +1,213 @@
+ <!DOCTYPE html>  
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head>  
+    <title></title>  
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>  
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
+      
+</head>  
+<style>
+table, th , td  {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-align:center;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+table {
+  color: #333;
+  font-size: .9em;
+  font-weight: 300;
+  line-height: 40px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 2px solid #ed1c40;
+  width: 500px;
+  margin: 50px auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,.16);
+  border-radius: 2px;
+}
+
+th {
+  background: #ed1c40;
+  color: #fff;
+  border: none;
+}
+
+tr:hover:not(th) {background-color: rgba(237,28,64,.1);}
+
+
+input[type="button"] {
+    transition: all .3s;
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input[type="button"]:not(.active) {
+    background-color: red;
+}
+
+.active {
+    background-color: blue;
+    color :#fff;
+}
+
+input[type="button"]:hover:not(.active) {
+    background-color: blue;
+}
+
+</style>
+<body>  
+  
+    <div ng-app="mainApp" data-ng-controller="CRUDController">  
+    
+ <form ng-hide="myVar">
+Item Id:-<input type="text" ng-model="item_model_id" />
+Item Name:-<input type="text" ng-model="item_model_name" />
+Item Price:-<input type="text" ng-model="item_model_price" />
+
+<input type="button" value="Submit" ng-click="insertData()" />
+ <input type="button" value="Update" ng-click="updateData()"  />
+</form>
+    <button data-ng-click="open()" data-ng-init="myVar = true">Add New Item</button>     
+    <p><input type="text" ng-model="test" placeholder="Search.."></p>
+    
+   <table  >
+   <thead>
+     <tr>
+     <td> Id  </td>
+     <td> Name </td>
+     <td> Price </td>
+     </tr>
+    </thead>
+   <tbody>
+   <tr ng-repeat="x in names| filter:test">
+    <td>{{ x.Id }}</td>
+    <td>{{ x.Name }}</td>
+    <td>{{ x.Price }}</td>
+    
+    <td> <input type="button" value="Delete" data-ng-click="deleteData(x.Id)"/> </td>
+     <td> <input type="button" value="Edit"  data-ng-click="BindSelectedData(x)"/> </td>
+   </tr>
+   </tbody>
+  </table>
+ 
+   
+     
+   
+         
+    </div>  
+    
+    
+   
+
+  
+    <script type="text/javascript">  
+        var app = angular.module("mainApp", [ ]);  
+      
+        app.controller('CRUDController', function ($scope, $http ) {  
+        
+        
+         DisplayData();
+        
+        function DisplayData() {
+         
+          $http.get("item_learn.php")
+          .then(function (response) {$scope.names = response.data.Records;});
+          
+          };
+          
+          $scope.insertData=function(){		
+          $http.post("insert.php", {
+		'item_id':$scope.item_model_id,
+		'item_name':$scope.item_model_name,
+		'item_price':$scope.item_model_price})
+    
+    .success(function(data,status,headers,config){
+      DisplayData();
+      close();
+    console.log("Data Inserted Successfully");
+     
+    });
+        }
+         
+           
+       $scope.deleteData=function(Id){	
+      
+          $http.post("delete.php", {
+		'item_id':Id})
+    
+    .success(function(data,status,headers,config){
+      DisplayData();
+     console.log(Id);
+    });
+        }
+        
+        
+        
+       
+        
+        
+        
+    
+        $scope.BindSelectedData = function (x) {  
+                $scope.item_model_id = x.Id;  
+                $scope.item_model_name = x.Name;  
+                $scope.item_model_price = x.Price;  
+                $scope.toggle();
+            }  
+          
+          
+         $scope.updateData=function(){		
+          $http.post("update.php", {
+		'item_id':$scope.item_model_id,
+		'item_name':$scope.item_model_name,
+		'item_price':$scope.item_model_price})
+    
+    .success(function(data,status,headers,config){
+      DisplayData();
+    console.log("Data Updated Successfully");
+    
+     
+    });
+        }  
+          
+    $scope.open = function() {
+        $scope.myVar = false;
+    };
+    
+     function close()
+     {
+    
+        $scope.myVar = true;
+    };   
+    
+  
+ 
+    
+     
+            
+        });  
+    </script>  
+    
+</body>  
+</html> 

@@ -1,0 +1,96 @@
+<!DOCTYPE html>  
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head>  
+    <title></title>  
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+</head>  
+<style>
+table, th , td  {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+</style>
+<body> 
+
+
+<div ng-app="myapp" ng-controller="DbController">
+
+<form name="userList" id="userForm" ng-submit="insertUserInfo(userInfo);" >
+	<div>
+		<h1>Add New Item</h1>
+	</div>
+	 
+        <div>
+			<label>Item Id</label>
+        </div>
+		 
+	<div >
+				<input type="number" name="item_id" ng-model="userInfo.item_id" size="32" required/>
+	</div>
+		 
+	 
+	 
+        <div>
+			<label>Item Name</label>
+	</div>
+	 
+	<div >
+				<input type="text" name="item_name" ng-model="userInfo.item_name" size="32" required/>
+	</div>
+	 
+	 
+ 
+<div >
+			<label>Item Price</label>
+		</div>
+		 
+			<div >
+				<input type="number" name="email" ng-model="userInfo.item_price"  size="32" required/>
+			</div>
+		 
+	 
+	 
+		 
+	
+	 
+			<div>
+				<ul>
+					<li >
+						<input type="submit" title="Add New User" value="Add New User" />
+					</li>
+				</ul>
+			</div>
+		 
+ 
+</form>
+</div>
+
+<script>
+
+		var myapp = angular.module('myapp',[]);
+		myapp.controller("DbController",['$scope','$http', function($scope,$http)
+		{
+			// insertuser data data to db
+			$scope.insertUserInfo = function(info)
+			{
+										
+				$http.post('theviralplus.com/gondiashop/Rough/insert.php',{"Item_Id":info.item_id,"Item_Name":info.item_name,"Item_Price":info.item_price}).success(function(data)
+				{
+					if (data == true) 
+					{
+						alert("successfully insert");
+						$('#userForm').hide();
+	
+					}
+				});
+			}
+		}]);
+</script>

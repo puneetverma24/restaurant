@@ -1,0 +1,2 @@
+[20-Dec-2017 07:13:11 Etc/GMT] PHP Warning:  move_uploaded_file(uploads/WEBUPLOADsolid_class_design_principles.png): failed to open stream: No such file or directory in /home/thevimck/public_html/gondiashop/Rough/try/upload.php on line 29
+[20-Dec-2017 07:13:11 Etc/GMT] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phphb5Ukd' to 'uploads/WEBUPLOADsolid_class_design_principles.png' in /home/thevimck/public_html/gondiashop/Rough/try/upload.php on line 29
